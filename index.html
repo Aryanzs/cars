@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Car Dealership</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add this in the <head> section of your HTML file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="#home"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#inventory">Inventory</a></li>
+                <li><a href="#financing">Financing</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="home" class="hero-section">
+    <div class="slider">
+        <!-- Dynamic slider content here -->
+        <!-- For simplicity, I'll add a placeholder image -->
+        <img id='slider-image' src="car1.jpg" alt="Slider Image1">
+    </div>
+    <div class="intro">
+        <h1>Find Your Dream Sports Car</h1>
+        <p>Exclusive Deals on the Latest Models</p>
+        <a href="#inventory" class="cta-button">Discover More</a>
+    </div>
+</section>
+
+<!-- Inventory Section -->
+<section id="inventory" class="inventory-section">
+    <div class="inventory-header">
+        <h2>Our Inventory</h2>
+        <img src="car.gif" alt="Animated Car" class="animated-car">
+    </div>
+    <!-- Car Model Slider -->
+    <div class="slider-container">
+        <div class="slider-arrow left-arrow" onclick="moveSlider(-1)">&#10094;</div>
+        <div class="slider-wrapper">
+            <div class="car-slider">
+                <!-- Add all your car models here -->
+                <div class="car-slide">
+                    <img src="car1.jpg" alt="Model S">
+                    <div class="car-info">
+                        <h3>Model S</h3>
+                        <p>Starting at $70,000</p>
+                    </div>
+                </div>
+                <div class="car-slide">
+                    <img src="car2.jpg" alt="Model X">
+                    <div class="car-info">
+                        <h3>Model X</h3>
+                        <p>Starting at $80,000</p>
+                    </div>
+                </div>
+                <div class="car-slide">
+                    <img src="car3.jpg" alt="Model Y">
+                    <div class="car-info">
+                        <h3>Model Y</h3>
+                        <p>Starting at $60,000</p>
+                    </div>
+                </div>
+                <!-- Repeat the above div for each car model you have -->
+            </div>
+        </div>
+        <div class="slider-arrow right-arrow" onclick="moveSlider(1)">&#10095;</div>
+    </div>
+</section>
+
+<section id="financing" class="financing-section">
+    <div class="financing-header">
+      <h2>Financing Options</h2>
+    </div>
+    <div class="financing-content">
+      <p>Explore our flexible financing options tailored to suit your needs. Whether you're looking for low monthly payments or prefer to pay upfront, we have solutions for you.</p>
+      <p>Our financing specialists are here to guide you through the process and help you find the best plan that fits your budget and lifestyle.</p>
+      <a href="#contact" class="cta-button">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="about-content">
+        <h2>About Us</h2>
+        <p>Welcome to our sports car dealership!</p>
+        <p>At our dealership, we specialize in providing the finest selection of luxury and performance vehicles. With a passion for cars and a dedication to customer satisfaction, we strive to make your car buying experience exceptional.</p>
+        <p>Our team of knowledgeable professionals is here to assist you every step of the way, from choosing the perfect vehicle to securing financing options that fit your budget.</p>
+        <p>Visit us today and discover the thrill of owning your dream sports car!</p>
+    </div>
+</section>
+
+  
+
+
+
+<section id="contact" class="contact-section">
+    
+    <div class="contact-form-container">
+        <form id="contact-form" class="contact-form">
+          <h2>Contact Form</h2>
+          <div class="form-group">
+            <input type="text" id="name" name="name" required>
+            <label for="name">Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required>
+            <label for="email">Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="message">Message</label>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+       
+
+      </div>
+
+
+      
+
+</section>
+
+<footer>
+    <p>&copy; 2024 Sports Car Dealership. All rights reserved.</p>
+</footer>
+
+
+<script src="slider.js"></script>
+<script src="animation.js"></script>
+
+</body>
+</html>
